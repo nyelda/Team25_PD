@@ -9,12 +9,6 @@ const Exercise = () => {
                 <li>
                     <Link to="/exercise/home">Easy</Link>
                 </li>
-                <li>
-                    <Link to="/exercise/medium">Medium</Link>
-                </li>
-                <li>
-                    <Link to="/exercise/hard">Hard</Link>
-                </li>
             </ul>
         </div>
     )

@@ -1,17 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-const Exercise = () => {
+const Exercise = ({ name, details, onClick }) => {
     return (
-        <div>
-            <h2>Choose Difficulty</h2>
-            <ul>
-                <li>
-                    <Link to="/exercise/home">Easy</Link>
-                </li>
-            </ul>
-        </div>
-    )
-}
+      <div className="exercise" onClick={onClick}>
+        <h3>{name}</h3>
+        <p>{details}</p>
+      </div>
+    );
+  };
 
 export default Exercise;
